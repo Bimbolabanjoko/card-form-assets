@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal work</title>
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="script2.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="cards">
+        <div class="back-card">
+          <img src="/images/bg-card-back.png" alt="" />
+          <div class="cvv">
+            <span>222</span>
+          </div>
+        </div>
+
+        <div class="front-card">
+          <img src="/images/bg-card-front.png" alt="" />
+          <div class="card-details">
+            <img src="/images/card-logo.svg" alt="" />
+            <span class="card-number">1233 444 777 9890</span>
+            <div class="info">
+              <span class="card-holdername">Banjcole Simisola</span>
+              <span class="expiry-date">14/09/2027</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form action="#">
+        <div class="form-group">
+          <label for="Name">CARDHOLDER NAME</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="e.g Banjocole Simisola"
+            maxlength="25"
+            autocomplete="off"
+          />
+          <span class="info-err">Cannot be blank</span>
+        </div>
+        <div class="form-group">
+          <label for="number">CARD NUMBER</label>
+          <input
+            type="text"
+            id="card-number"
+            placeholder="e.g 1233 444 777 9890"
+            maxlength="25"
+            autocomplete="off"
+          />
+          <span class="info-err">Wrong format numbers only</span>
+        </div>
+        <div class="form-exp-date">
+          <div class="date">
+            <label for="date">EXP. DATE (MM/YY)</label>
+            <input
+              type="text"
+              id="month"
+              placeholder="MM"
+              maxlength="2"
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              id="year"
+              placeholder="YY"
+              maxlength="2"
+              autocomplete="off"
+            />
+            <span class="info-err">Cannot be blank</span>
+
+            <div class="form-group">
+              <label for="CVV">CVV</label>
+              <input
+                type="text"
+                id="CVV"
+                placeholder="e.g 113"
+                maxlength="2"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
